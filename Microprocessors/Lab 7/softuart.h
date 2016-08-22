@@ -1,0 +1,11 @@
+typedef unsigned char byte;
+void initUART(void);
+void putc(char c);
+void delay_1_bit(void);
+void poll_UART(void); 
+void TXDecimal(int Number);
+void TXHex(int Number);
+void TXString(char *s);
+extern volatile unsigned int milliseconds;
+void poll_UART(void);
+void delay(int millis);
